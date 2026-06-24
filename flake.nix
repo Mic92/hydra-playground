@@ -9,7 +9,7 @@
       pkgs = nixpkgs.legacyPackages.x86_64-linux;
       # Unique marker so the output path does not already exist in the cache,
       # forcing the queue runner to upload a fresh NAR + .ls listing.
-      marker = "zstd-test-20260624-121402";
+      marker = "zstd-test-20260624-134717";
     in
     {
       hydraJobs.zstd-listing.x86_64-linux = pkgs.runCommand "staging-${marker}" { } ''
